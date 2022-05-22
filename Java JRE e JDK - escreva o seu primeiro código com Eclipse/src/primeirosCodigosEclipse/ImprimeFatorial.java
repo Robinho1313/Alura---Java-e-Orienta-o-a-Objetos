@@ -1,6 +1,6 @@
 /*
  * Autor Robson Borges dos Santos
- * Resultado dos números fatoriais entre 2 e 9
+ * Realiza cálculo fatorial dos números entre 2 até 9.
  */
 package primeirosCodigosEclipse;
 

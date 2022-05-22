@@ -10,6 +10,5 @@ public class TestaValores {
 		primeiro = 10;
 		
 		System.out.println(segundo);
-
 	}
 }
