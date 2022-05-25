@@ -1,3 +1,4 @@
+package test;
 public class TesteReferencias {
 
 	//referência dos objetos
