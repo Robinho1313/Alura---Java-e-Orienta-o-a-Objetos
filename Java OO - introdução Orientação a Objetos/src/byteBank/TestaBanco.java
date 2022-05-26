@@ -23,7 +23,7 @@ public class TestaBanco {
 		
 		//outra forma de compor objetos
 		ContaBancaria Marcela = new ContaBancaria();
-		System.out.println(Marcela.saldo);
+		System.out.println(Marcela.getSaldo());
 		
 		Marcela.titular = new ClienteBancario();
 		Marcela.titular.nome = "Marcelinha";

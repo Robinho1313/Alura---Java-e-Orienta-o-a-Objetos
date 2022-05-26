@@ -1,9 +1,9 @@
 package byteBank;
 public class ContaBancaria {
 
-	double saldo;
-	int agencia;
-	int numero;
+	private double saldo;
+	private int agencia;
+	private int numero;
 	ClienteBancario titular;
 
 	public void depositar(double valor) {
@@ -17,6 +17,10 @@ public class ContaBancaria {
 			this.saldo = (this.saldo - valor);
 			return true;
 		}
+	}
+
+	public double getSaldo() {
+		return saldo;
 	}
 
 	public boolean transfere(double valor, ContaBancaria destino) {
