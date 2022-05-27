@@ -1,4 +1,5 @@
 package byteBankDois;
+
 public class ContaBancariaDois {
 
 	private double saldo;
@@ -6,11 +7,19 @@ public class ContaBancariaDois {
 	private int numero;
 	private ClienteBancarioDois titular;
 
+	public ContaBancariaDois(int agencia, int numero) {
+		this.agencia = agencia;
+		this.numero = numero;
+	}
+
 	public int getAgencia() {
 		return agencia;
 	}
 
 	public void setAgencia(int agencia) {
+		if (agencia <= 0) {
+			System.out.println("Não Pode Ser Valor Negativo");
+		}
 		this.agencia = agencia;
 	}
 
@@ -19,6 +28,11 @@ public class ContaBancariaDois {
 	}
 
 	public void setNumero(int numero) {
+
+		if (agencia <= 0) {
+
+			System.out.println("Não Pode");
+		}
 		this.numero = numero;
 	}
 

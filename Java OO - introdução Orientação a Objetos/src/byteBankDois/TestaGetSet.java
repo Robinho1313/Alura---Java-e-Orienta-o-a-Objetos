@@ -4,8 +4,7 @@ public class TestaGetSet {
 
 	public static void main(String[] args) {
 
-		ContaBancariaDois conta = new ContaBancariaDois();
-		conta.setNumero(1606);
+		ContaBancariaDois conta = new ContaBancariaDois(1606, 121212);
 		System.out.println(conta.getNumero());
 		
 		ClienteBancarioDois paulo = new ClienteBancarioDois();
