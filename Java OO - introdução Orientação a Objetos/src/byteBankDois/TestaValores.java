@@ -7,9 +7,6 @@ public class TestaValores {
 		ContaBancariaDois conta = new ContaBancariaDois(1606, 74490);
 		System.out.println(conta.getAgencia());
 		System.out.println(conta.getNumero());
-
-		
-		
+		System.out.println(ContaBancariaDois.getTotal());		
 	}
-
 }

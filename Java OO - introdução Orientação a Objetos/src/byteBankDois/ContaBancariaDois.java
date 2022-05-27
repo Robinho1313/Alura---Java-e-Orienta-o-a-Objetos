@@ -6,10 +6,17 @@ public class ContaBancariaDois {
 	private int agencia;
 	private int numero;
 	private ClienteBancarioDois titular;
+	private static int total;
+
+	public static int getTotal() {
+		return total;
+	}
 
 	public ContaBancariaDois(int agencia, int numero) {
+		ContaBancariaDois.total++;
 		this.agencia = agencia;
 		this.numero = numero;
+		System.out.println("Total de contas...> " + total);
 	}
 
 	public int getAgencia() {
