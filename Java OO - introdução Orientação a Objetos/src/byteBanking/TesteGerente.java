@@ -3,6 +3,9 @@ package byteBanking;
 public class TesteGerente {
 
 	public static void main(String[] args) {
+		
+		Autenticavel substituto = new Gerente();
+		
 		Gerente gerente = new Gerente();
 		gerente.setNome("Yago Borges");
 		gerente.setCpf("87654321324");
