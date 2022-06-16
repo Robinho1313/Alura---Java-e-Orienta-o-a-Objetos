@@ -1,21 +1,19 @@
 package byteBanking;
-
 public class Cliente implements Autenticavel {
 
-	private int senha;
+        private AutenticacaoUtil util;
 
-	@Override
-	public void setSenha(int senha) {
-		this.senha = senha;
-	}
+        public Cliente() {
+            this.util = new AutenticacaoUtil();
+        }
 
-	@Override
-	public boolean autentica(int senha) {
+        @Override
+        public void setSenha(int senha) {
+            this.util.setSenha(senha);
+        }
 
-		if (this.senha == senha) {
-			return true;
-		} else {
-			return false;
-		}
-	}
+        @Override
+        public boolean autentica(int senha) {
+            return this.util.autentica(senha);
+        }
 }
